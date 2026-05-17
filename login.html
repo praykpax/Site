@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Müvekkil Girişi — Yılanlı-Aybakan Hukuki Danışmanlık</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#icerik" class="skip-link">Ana içeriğe geç</a>
+
+<nav class="navbar" aria-label="Ana navigasyon">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-name">Yılanlı-Aybakan</span>
+      <span class="nav-logo-sub">Hukuki Danışmanlık</span>
+    </a>
+    <ul class="nav-menu" role="list">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="services.html">Hizmetler</a></li>
+      <li><a href="contact.html" class="nav-cta">İletişim</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle"
+            aria-label="Menüyü aç" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="nav-mobile" id="navMobile" aria-label="Mobil menü">
+  <a href="index.html">Anasayfa</a>
+  <a href="about.html">Hakkımızda</a>
+  <a href="services.html">Hizmetler</a>
+  <a href="contact.html">İletişim</a>
+</nav>
+
+<main id="icerik">
+  <section class="login-section" aria-label="Müvekkil giriş formu">
+    <div class="login-box">
+      <div class="login-logo">
+        <div class="login-logo-name">Yılanlı-Aybakan</div>
+        <div class="login-logo-sub">Müvekkil Portalı</div>
+      </div>
+
+      <h2>Giriş Yap</h2>
+      <p>Müvekkil portalına hoş geldiniz.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="username">Kullanıcı Adı</label>
+          <input class="form-control" type="text" id="username" name="username"
+                 autocomplete="username" required placeholder="Kullanıcı adınızı giriniz">
+        </div>
+        <div class="form-group">
+          <label for="password">Şifre</label>
+          <input class="form-control" type="password" id="password" name="password"
+                 autocomplete="current-password" required placeholder="Şifrenizi giriniz">
+        </div>
+        <div class="form-group">
+          <label class="form-check">
+            <input type="checkbox" id="remember" name="remember">
+            Beni hatırla
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" style="margin-top:8px;">
+          Giriş Yap
+        </button>
+        <div id="errorMessage"   class="alert-error"   role="alert"></div>
+        <div id="successMessage" class="alert-success" role="status"></div>
+      </form>
+
+      <hr class="divider">
+
+      <p style="text-align:center;font-size:13px;color:var(--text-300);line-height:1.8;">
+        Hesabınız yok mu veya erişim sorunu mu yaşıyorsunuz?<br>
+        Büromuzla iletişime geçin:<br>
+        <a href="mailto:aybakanhukuk@gmail.com"
+           style="color:var(--gold-dark);text-decoration:none;">
+          aybakanhukuk@gmail.com
+        </a>
+      </p>
+      <div style="text-align:center;margin-top:20px;">
+        <a href="index.html" style="font-size:13px;color:var(--text-300);text-decoration:none;">
+          ← Anasayfaya dön
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

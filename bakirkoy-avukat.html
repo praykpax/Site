@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bakırköy Adliyesi avukatı arıyorsanız Yılanlı-Aybakan Hukuk Bürosu yanınızda. Boşanma, iş hukuku, ceza, kira ve icra davalarında Bakırköy'de uzman hukuki danışmanlık.">
+  <meta name="keywords" content="bakırköy avukat, bakırköy adliyesi avukat, bakırköy boşanma avukatı, bakırköy iş hukuku avukatı, bakırköy ceza avukatı, bakırköy hukuk bürosu">
+  <meta property="og:title" content="Bakırköy Adliyesi Avukatı | Yılanlı-Aybakan Hukuk Bürosu">
+  <meta property="og:description" content="Bakırköy Adliyesi'nde dava takibi ve hukuki danışmanlık. İlk görüşme ücretsiz.">
+  <meta property="og:type" content="website">
+  <title>Bakırköy Adliyesi Avukatı | Yılanlı-Aybakan Hukuk Bürosu</title>
+  <link rel="canonical" href="https://www.yilanli-aybakan.com/bakirkoy-avukat.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Yılanlı-Aybakan Hukuki Danışmanlık",
+    "description": "Bakırköy Adliyesi'nde hukuki danışmanlık ve dava takibi",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bakırköy",
+      "addressRegion": "İstanbul",
+      "addressCountry": "TR"
+    },
+    "telephone": "+90-546-967-36-41",
+    "email": "aybakanhukuk@gmail.com",
+    "url": "https://www.yilanli-aybakan.com",
+    "areaServed": ["Bakırköy", "Bağcılar", "Bahçelievler", "Esenler", "Bayrampaşa", "Güngören"],
+    "founder": [
+      {"@type": "Person", "name": "Av. İlyas Yılanlı", "jobTitle": "Kurucu Avukat"},
+      {"@type": "Person", "name": "Av. Yakup Aybakan", "jobTitle": "Kurucu Avukat"}
+    ]
+  }
+  </script>
+
+  <style>
+    /* Bölge sayfalarına özel — ana nav olmadığı için minimal header */
+    .bolge-header {
+      background: var(--brown-800);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 0 var(--gutter);
+    }
+    .bolge-header-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .bolge-back {
+      font-size: 13px;
+      color: rgba(240,235,225,0.55);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .bolge-back:hover { color: var(--gold-light); }
+    .bolge-back svg { width: 14px; height: 14px; }
+
+    .bolge-hero {
+      background: linear-gradient(160deg, var(--brown-900) 0%, var(--brown-700) 100%);
+      padding: 72px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .bolge-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 1;
+    }
+    .bolge-hero .container { position: relative; }
+    .bolge-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .bolge-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700;
+      color: var(--cream-50);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      max-width: 680px;
+      margin-bottom: 20px;
+    }
+    .bolge-hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .bolge-hero p {
+      font-size: 17px;
+      color: rgba(240,235,225,0.72);
+      max-width: 540px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .bolge-cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold);
+      color: var(--brown-900);
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 26px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1.5px solid rgba(201,168,76,0.45);
+      color: var(--gold-light);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 26px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+      white-space: nowrap;
+    }
+    .btn-outline:hover { border-color: var(--gold); background: rgba(201,168,76,0.08); }
+
+    /* Adliye bilgi şeridi */
+    .adliye-serit {
+      background: var(--brown-800);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 18px 0;
+    }
+    .adliye-serit .container {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .adliye-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(240,235,225,0.6);
+    }
+    .adliye-item strong { color: var(--gold-light); font-size: 13px; }
+
+    /* Hizmet kartları */
+    .hizmetler-bolge {
+      padding: 80px 0;
+      background: var(--cream-100);
+    }
+    .hizmetler-bolge .baslik-grup {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .hizmet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .hizmet-kart {
+      background: var(--white);
+      border: 1px solid var(--cream-300);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .hizmet-kart:hover {
+      border-color: var(--gold);
+      box-shadow: 0 4px 20px rgba(28,14,8,0.08);
+    }
+    .hizmet-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--gold-pale);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    .hizmet-kart h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--brown-800);
+      margin-bottom: 8px;
+    }
+    .hizmet-kart p {
+      font-size: 14px;
+      color: var(--text-500);
+      line-height: 1.65;
+    }
+
+    /* Neden biz */
+    .neden-biz {
+      background: var(--cream-200);
+      padding: 80px 0;
+    }
+    .neden-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .neden-grid { grid-template-columns: 1fr; } }
+    .neden-metin h2 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 700;
+      color: var(--brown-800);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+    .neden-metin p {
+      font-size: 15.5px;
+      color: var(--text-500);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .neden-liste { display: flex; flex-direction: column; gap: 12px; }
+    .neden-madde {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--white);
+      border-radius: var(--radius);
+      border-left: 3px solid var(--gold);
+    }
+    .neden-madde-ikon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+    .neden-madde-metin { font-size: 14px; color: var(--text-700); line-height: 1.55; }
+    .neden-madde-metin strong { color: var(--brown-800); display: block; font-size: 14px; margin-bottom: 2px; }
+
+    /* İstatistikler */
+    .stats-bolge {
+      background: var(--brown-900);
+      padding: 56px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+    @media (max-width: 640px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+    .stat-item {
+      text-align: center;
+      padding: 24px 16px;
+      border-right: 1px solid rgba(201,168,76,0.1);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-sayi {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-aciklama {
+      font-size: 12px;
+      color: rgba(240,235,225,0.45);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* SSS */
+    .sss-bolge {
+      padding: 80px 0;
+      background: var(--cream-100);
+    }
+    .sss-bolge .baslik-grup {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .sss-liste { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
+    .sss-item {
+      background: var(--white);
+      border: 1px solid var(--cream-300);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .sss-soru {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--brown-800);
+      cursor: pointer;
+      gap: 12px;
+    }
+    .sss-soru::after {
+      content: '+';
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .sss-item.open .sss-soru::after { content: '−'; }
+    .sss-cevap {
+      display: none;
+      padding: 0 20px 18px;
+      font-size: 14.5px;
+      color: var(--text-500);
+      line-height: 1.7;
+      border-top: 1px solid var(--cream-200);
+      padding-top: 14px;
+    }
+    .sss-item.open .sss-cevap { display: block; }
+
+    /* CTA Banner */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--brown-800) 0%, var(--brown-900) 100%);
+      padding: 72px 0;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.2);
+    }
+    .cta-banner h2 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 700;
+      color: var(--cream-50);
+      margin-bottom: 14px;
+    }
+    .cta-banner p {
+      font-size: 16px;
+      color: rgba(240,235,225,0.6);
+      max-width: 480px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    /* Footer minimal */
+    .bolge-footer {
+      background: var(--brown-900);
+      border-top: 1px solid rgba(201,168,76,0.1);
+      padding: 28px var(--gutter);
+      text-align: center;
+    }
+    .bolge-footer p {
+      font-size: 12.5px;
+      color: rgba(240,235,225,0.3);
+    }
+    .bolge-footer a { color: rgba(201,168,76,0.6); text-decoration: none; }
+    .bolge-footer a:hover { color: var(--gold); }
+
+    /* Floating */
+    .floating-buttons { position: fixed; bottom: 28px; right: 24px; display: flex; flex-direction: column; gap: 10px; z-index: 999; }
+    .float-btn {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+    }
+    .float-btn:hover { transform: scale(1.08); }
+    .float-wa    { background: #25D366; }
+    .float-phone { background: var(--gold); }
+
+    @media (max-width: 480px) {
+      .bolge-cta-row { flex-direction: column; }
+      .btn-primary, .btn-outline { justify-content: center; }
+      .adliye-serit .container { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Floating Butonlar -->
+<div class="floating-buttons">
+  <a href="https://wa.me/905469673641?text=Merhaba%2C%20Bak%C4%B1rk%C3%B6y%27de%20hukuki%20deste%C4%9Fe%20ihtiyac%C4%B1m%20var."
+     target="_blank" rel="noopener noreferrer"
+     class="float-btn float-wa" aria-label="WhatsApp ile mesaj gönderin">💬</a>
+  <a href="tel:+905469673641"
+     class="float-btn float-phone" aria-label="Hemen arayın">📞</a>
+</div>
+
+<!-- Minimal Header -->
+<header class="bolge-header">
+  <div class="bolge-header-inner">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      <span class="nav-logo-name">Yılanlı-Aybakan</span>
+      <span class="nav-logo-sub">Hukuki Danışmanlık</span>
+    </a>
+    <a href="index.html" class="bolge-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Ana Siteye Dön
+    </a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="bolge-hero">
+  <div class="container">
+    <div class="bolge-badge">📍 Bakırköy Adliyesi</div>
+    <h1>Bakırköy'de<br><em>Güvenilir Hukuki</em><br>Danışmanlık</h1>
+    <p>Bakırköy Adliyesi'nde aktif dava takibi. Boşanma, iş hukuku, ceza, kira ve icra davalarında deneyimli hukuk ekibi.</p>
+    <div class="bolge-cta-row">
+      <a href="contact.html" class="btn-primary">
+        📋 Danışmanlık Al
+      </a>
+      <a href="https://wa.me/905469673641?text=Merhaba%2C%20hukuki%20dan%C4%B1%C5%9Fmanl%C4%B1k%20istiyorum."
+         target="_blank" rel="noopener noreferrer" class="btn-outline">
+        💬 WhatsApp'tan Yaz
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Adliye Bilgi Şeridi -->
+<div class="adliye-serit">
+  <div class="container">
+    <div class="adliye-item">
+      <span>🏛️</span>
+      <span><strong>Bakırköy Adliyesi</strong> — Ataköy, İstanbul</span>
+    </div>
+    <div class="adliye-item">
+      <span>⚖️</span>
+      <span>Asliye Hukuk · Asliye Ceza · Aile Mahkemesi · İcra</span>
+    </div>
+    <div class="adliye-item">
+      <span>🕐</span>
+      <span>Pzt–Cum <strong>09:00–18:00</strong></span>
+    </div>
+  </div>
+</div>
+
+<!-- Hizmetler -->
+<section class="hizmetler-bolge">
+  <div class="container">
+    <div class="baslik-grup">
+      <span class="section-label">Hizmetlerimiz</span>
+      <h2 class="section-title">Bakırköy Adliyesi'nde<br>Takip Ettiğimiz Davalar</h2>
+      <span class="gold-rule center"></span>
+    </div>
+    <div class="hizmet-grid">
+      <div class="hizmet-kart">
+        <div class="hizmet-icon">💔</div>
+        <h3>Boşanma & Aile Hukuku</h3>
+        <p>Anlaşmalı ve çekişmeli boşanma, nafaka, velayet, mal paylaşımı davalarında Bakırköy Aile Mahkemesi'nde tam temsil.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-icon">👷</div>
+        <h3>İş Hukuku</h3>
+        <p>İşe iade, kıdem ve ihbar tazminatı, mobbing, SGK uyuşmazlıkları. Bakırköy'deki işçi ve işverenler için etkin hukuki destek.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-icon">⚖️</div>
+        <h3>Ceza Hukuku</h3>
+        <p>Bakırköy Asliye Ceza ve Ağır Ceza Mahkemelerinde savunma, itiraz ve temyiz süreçlerinin takibi.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-icon">🏠</div>
+        <h3>Kira & Tahliye</h3>
+        <p>Kira alacağı, tahliye davası, kira tespit, kiracı hakları. TBK kapsamında sözleşme ihtilaflarının çözümü.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-icon">📋</div>
+        <h3>İcra & İflas</h3>
+        <p>Ödeme emri, haciz, tahliye, itirazın iptali davalarında İİK kapsamında hızlı ve etkin icra takibi.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-icon">🤝</div>
+        <h3>Arabuluculuk</h3>
+        <p>Zorunlu ve ihtiyari arabuluculuk süreçlerinde taraf temsilciliği ve anlaşma tutanaklarının hazırlanması.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- İstatistikler -->
+<section class="stats-bolge" aria-label="Büro istatistikleri">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-sayi"><span class="counter" data-target="500" data-suffix="+">500+</span></div>
+        <div class="stat-aciklama">Tamamlanan Dava</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-sayi"><span class="counter" data-target="15" data-suffix="+">15+</span></div>
+        <div class="stat-aciklama">Yıl Deneyim</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-sayi"><span class="counter" data-target="6" data-suffix="">6</span></div>
+        <div class="stat-aciklama">İlçede Hizmet</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-sayi"><span class="counter" data-target="98" data-suffix="%">98%</span></div>
+        <div class="stat-aciklama">Müvekkil Memnuniyeti</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Neden Biz -->
+<section class="neden-biz">
+  <div class="container">
+    <div class="neden-grid">
+      <div class="neden-metin">
+        <span class="section-label">Neden Yılanlı-Aybakan?</span>
+        <h2>Bakırköy'de Hukuki Sürecinizde Yanınızdayız</h2>
+        <p>Bakırköy Adliyesi'nin yapısını, mahkeme pratiklerini ve yerel prosedürleri yakından bilen bir ekiple çalışmak; davanızın seyrini doğrudan etkiler.</p>
+        <p>İlk danışmanlık görüşmeniz <strong>ücretsizdir</strong>. Davanızı değerlendirip size net bir yol haritası sunarız.</p>
+      </div>
+      <div class="neden-liste">
+        <div class="neden-madde">
+          <span class="neden-madde-ikon">🏛️</span>
+          <div class="neden-madde-metin">
+            <strong>Bakırköy Adliyesi'nde Aktif Takip</strong>
+            Mahkeme duruşmaları, dilekçe takibi ve icra işlemlerinde yerinde hizmet.
+          </div>
+        </div>
+        <div class="neden-madde">
+          <span class="neden-madde-ikon">⚡</span>
+          <div class="neden-madde-metin">
+            <strong>Hızlı Geri Dönüş</strong>
+            Her başvuruya 24 saat içinde yanıt, acil durumlarda aynı gün görüşme.
+          </div>
+        </div>
+        <div class="neden-madde">
+          <span class="neden-madde-ikon">💬</span>
+          <div class="neden-madde-metin">
+            <strong>Şeffaf İletişim</strong>
+            Dava sürecinizin her aşamasında sizi bilgilendiririz; hukuki jargon olmadan.
+          </div>
+        </div>
+        <div class="neden-madde">
+          <span class="neden-madde-ikon">📍</span>
+          <div class="neden-madde-metin">
+            <strong>Bölge Uzmanlığı</strong>
+            Bakırköy, Bağcılar, Bahçelievler, Esenler, Bayrampaşa ve Güngören'de aktif hizmet.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SSS -->
+<section class="sss-bolge">
+  <div class="container">
+    <div class="baslik-grup">
+      <span class="section-label">Sık Sorulan Sorular</span>
+      <h2 class="section-title">Bakırköy'de Hukuki Süreç<br>Hakkında Merak Edilenler</h2>
+      <span class="gold-rule center"></span>
+    </div>
+    <div class="sss-liste">
+      <div class="sss-item">
+        <button class="sss-soru">Bakırköy Adliyesi'nde hangi mahkemeler bulunuyor?</button>
+        <div class="sss-cevap">Bakırköy Adliyesi; Asliye Hukuk, Asliye Ceza, Ağır Ceza, Aile, İş, Tüketici ve İcra Hukuk Mahkemelerini bünyesinde barındırmaktadır. Bakırköy'deki davanızı doğrudan bu adliyede takip ediyoruz.</div>
+      </div>
+      <div class="sss-item">
+        <button class="sss-soru">İlk danışmanlık görüşmesi ücretli mi?</button>
+        <div class="sss-cevap">Hayır. İlk danışmanlık görüşmemiz tamamen ücretsizdir. Telefonla, WhatsApp üzerinden veya ofisimizde yüz yüze görüşebilirsiniz. Davanızı değerlendirip size net bir süreç haritası sunarız.</div>
+      </div>
+      <div class="sss-item">
+        <button class="sss-soru">Bağcılar, Bahçelievler veya Esenler'den de hizmet alabilir miyim?</button>
+        <div class="sss-cevap">Evet. Bakırköy, Bağcılar, Bahçelievler, Esenler, Bayrampaşa ve Güngören'deki müvekkillerimize hizmet veriyoruz. Bu ilçelerdeki davalar genellikle Bakırköy Adliyesi'nde görülmektedir.</div>
+      </div>
+      <div class="sss-item">
+        <button class="sss-soru">Boşanma davası ne kadar sürer?</button>
+        <div class="sss-cevap">Anlaşmalı boşanma genellikle 1–3 ay içinde sonuçlanır. Çekişmeli boşanma davası ise delil durumuna ve mahkeme yoğunluğuna göre 6 ay ile 2 yıl arasında sürebilir. Bakırköy Aile Mahkemesi'nin güncel iş yükünü bilen ekibimiz en etkin süreç planını sizinle paylaşır.</div>
+      </div>
+      <div class="sss-item">
+        <button class="sss-soru">İşten çıkarıldım, ne yapmalıyım?</button>
+        <div class="sss-cevap">İşe iade davası için işten çıkarılma tarihinden itibaren 1 ay içinde arabulucuya başvurmanız zorunludur. Arabuluculuktan sonuç alınamazsa 2 hafta içinde iş mahkemesinde dava açılmalıdır. Bu süreçleri kaçırmamak için hemen bizimle iletişime geçin.</div>
+      </div>
+      <div class="sss-item">
+        <button class="sss-soru">Avukat tutmadan davamı takip edebilir miyim?</button>
+        <div class="sss-cevap">Teknik olarak mümkün; ancak hukuki prosedürlerin, dilekçe formatlarının ve süre kurallarının karmaşıklığı göz önünde bulundurulduğunda avukatsız yürütülen davalarda telafi edilemez hatalar sıkça yaşanmaktadır. Özellikle ceza davalarında ve değeri yüksek hukuki uyuşmazlıklarda profesyonel temsil kritik önem taşır.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Hukuki Sürecinizi<br>Birlikte Yönetelim</h2>
+    <p>Bakırköy ve çevre ilçelerde 15+ yıllık deneyimle yanınızdayız. İlk görüşme ücretsiz.</p>
+    <div class="bolge-cta-row" style="justify-content:center;">
+      <a href="contact.html" class="btn-primary">📋 Şimdi Başvur</a>
+      <a href="https://wa.me/905469673641?text=Merhaba%2C%20hukuki%20dan%C4%B1%C5%9Fmanl%C4%B1k%20istiyorum."
+         target="_blank" rel="noopener noreferrer" class="btn-outline">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bolge-footer">
+  <p>
+    © 2025 Yılanlı-Aybakan Hukuki Danışmanlık —
+    <a href="index.html">Ana Sayfa</a> ·
+    <a href="services.html">Hizmetler</a> ·
+    <a href="contact.html">İletişim</a>
+  </p>
+</footer>
+
+<script>
+  // SSS accordion
+  document.querySelectorAll('.sss-soru').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.sss-item');
+      var open = item.classList.contains('open');
+      document.querySelectorAll('.sss-item').forEach(function(i) { i.classList.remove('open'); });
+      if (!open) item.classList.add('open');
+    });
+  });
+
+  // Counter animasyonu
+  document.querySelectorAll('.counter').forEach(function(counter) {
+    var target = parseInt(counter.getAttribute('data-target'), 10);
+    var suffix = counter.getAttribute('data-suffix') || '';
+    var observer = new IntersectionObserver(function(entries) {
+      if (!entries[0].isIntersecting) return;
+      observer.unobserve(counter);
+      var current = 0, increment = target / 80;
+      function tick() {
+        current += increment;
+        if (current < target) {
+          counter.textContent = Math.floor(current) + suffix;
+          requestAnimationFrame(tick);
+        } else {
+          counter.textContent = target + suffix;
+        }
+      }
+      requestAnimationFrame(tick);
+    });
+    observer.observe(counter);
+  });
+</script>
+
+</body>
+</html>

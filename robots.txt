@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.yilanli-aybakan.av.tr/sitemap.xml

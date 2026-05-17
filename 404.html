@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sayfa Bulunamadı — Yılanlı-Aybakan Hukuki Danışmanlık</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-section {
+      min-height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+      background: var(--cream-100);
+    }
+    .error-inner { max-width: 480px; }
+    .error-code {
+      font-family: var(--font-display);
+      font-size: 96px;
+      font-weight: 700;
+      color: var(--cream-300);
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -0.04em;
+    }
+    .error-title {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--brown-800);
+      margin-bottom: 14px;
+    }
+    .error-desc {
+      font-size: 15px;
+      color: var(--text-500);
+      line-height: 1.78;
+      margin-bottom: 36px;
+    }
+    .error-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<a href="#icerik" class="skip-link">Ana içeriğe geç</a>
+
+<nav class="navbar" aria-label="Ana navigasyon">
+  <div class="container">
+    <a href="index.html" class="nav-logo" aria-label="Yılanlı-Aybakan Ana Sayfa">
+      <span class="nav-logo-name">Yılanlı-Aybakan</span>
+      <span class="nav-logo-sub">Hukuki Danışmanlık</span>
+    </a>
+    <ul class="nav-menu" role="list">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="services.html">Hizmetler</a></li>
+      <li><a href="makaleler.html">Makaleler</a></li>
+      <li><a href="contact.html" class="nav-cta">Danışmanlık</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle"
+            aria-label="Menüyü aç" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="nav-mobile" id="navMobile" aria-label="Mobil menü">
+  <a href="index.html">Anasayfa</a>
+  <a href="about.html">Hakkımızda</a>
+  <a href="services.html">Hizmetler</a>
+  <a href="makaleler.html">Makaleler</a>
+  <a href="contact.html" class="nav-cta">Danışmanlık</a>
+</nav>
+
+<main id="icerik">
+  <section class="error-section" aria-label="Hata sayfası">
+    <div class="error-inner">
+      <div class="error-code" aria-hidden="true">404</div>
+      <h1 class="error-title">Sayfa Bulunamadı</h1>
+      <p class="error-desc">
+        Aradığınız sayfa taşınmış, silinmiş veya hiç var olmamış olabilir.
+        Ana sayfaya dönebilir ya da bizimle doğrudan iletişime geçebilirsiniz.
+      </p>
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary">Ana Sayfaya Dön</a>
+        <a href="contact.html" class="btn btn-outline">İletişime Geç</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

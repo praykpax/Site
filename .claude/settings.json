@@ -1,0 +1,55 @@
+{
+  "project": {
+    "name": "Yılanlı-Aybakan Hukuki Danışmanlık Website",
+    "description": "Professional law firm website - HTML, CSS, JavaScript",
+    "type": "web",
+    "language": "Turkish"
+  },
+  "codeStyle": {
+    "indentation": 4,
+    "quotes": "double",
+    "semicolons": true,
+    "trailingComma": false
+  },
+  "rules": {
+    "noConsoleLog": false,
+    "requireComments": false,
+    "enforceAccessibility": true,
+    "enforceResponsive": true,
+    "minBrowserSupport": "last 2 years"
+  },
+  "testing": {
+    "breakpoints": [
+      {
+        "name": "Mobile",
+        "width": 480,
+        "height": 800
+      },
+      {
+        "name": "Tablet",
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "name": "Desktop",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "performanceTargets": {
+      "lighthouse": 85,
+      "pageSpeed": "90+",
+      "coreWebVitals": true
+    }
+  },
+  "deployment": {
+    "publicUrl": "https://yilanlı-aybakan.av.tr",
+    "environment": "production",
+    "minifyAssets": true,
+    "optimizeImages": true
+  },
+  "hooks": {
+    "beforeCommit": "Kontrol et: HTML valid mi? Responsive mi? Lighthouse > 85?",
+    "afterEdit": "Mobile breakpoints'te test et (480px, 768px)"
+  }
+}
