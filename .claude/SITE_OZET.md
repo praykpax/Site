@@ -72,15 +72,11 @@ Her bölge sayfasında: minimal header (logo + "Ana Siteye Dön"), hero, adliye 
 
 ---
 
-## İlyas Yılanlı Gizleme (2026-07-10)
+## İlyas Yılanlı Durumu
 
-İlyas Yılanlı'ya ait TÜM bilgiler (isim, fotoğraf ilyas.jpeg, profil, iletişim kartı,
-meta/schema kayıtları) siteden geçici olarak kaldırıldı. Arabuluculuk hizmeti
-"Adalet Bakanlığı sicilli uzman arabulucumuz" ifadesiyle İSİMSİZ devam ediyor.
-Büro adı "Yılanlı-Aybakan" değişmedi.
-
-**Geri getirmek için tek komut:** `git revert <gizleme-commit-hash>`
-(commit mesajında "İlyas Yılanlı bilgilerini geçici gizle" yazar, `git log --oneline` ile bul)
+2026-07-10'da geçici gizlendi (08dc40d), 2026-07-11'de kullanıcı isteğiyle
+GERİ GETİRİLDİ (08dc40d revert edildi). Şu an sitede tam görünür.
+İleride tekrar gizlemek gerekirse: 08dc40d commit'indeki değişiklik listesi şablon alınabilir.
 
 ---
 
