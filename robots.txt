@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.yilanli-aybakan.av.tr/sitemap.xml
+Sitemap: https://www.yilanliaybakan.com/sitemap.xml
