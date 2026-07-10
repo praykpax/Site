@@ -1635,3 +1635,172 @@ ul { list-style: none; }
   .float-btn { width: 46px; height: 46px; font-size: 20px; }
   .service-card { padding: 26px 22px; }
 }
+
+
+/* ============================================================
+   HESAPLAMA ARAÇLARI (hesaplama.html + arabuluculuk.html)
+   ============================================================ */
+    /* === HESAPLAMA ARAÇLARI — sayfaya özel stiller ============ */
+    .calc-section { padding: var(--section-v-sm) 0; }
+    .calc-card {
+      background: var(--white);
+      border: 1px solid var(--cream-300);
+      border-top: 3px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+      margin-top: 40px;
+      box-shadow: 0 2px 20px rgba(18,42,68,0.05);
+    }
+    .calc-card-hdr { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+    .calc-num {
+      font-family: var(--font-display);
+      font-size: 15px; font-weight: 700;
+      color: var(--gold-dark);
+      letter-spacing: 1px;
+    }
+    .calc-title {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 3vw, 28px);
+      font-weight: 700;
+      color: var(--brown-800);
+    }
+    .calc-basis {
+      font-size: 12px; color: var(--text-300);
+      margin-top: 6px; letter-spacing: 0.3px;
+    }
+    .calc-basis strong { color: var(--text-500); font-weight: 600; }
+    .calc-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 28px;
+      align-items: start;
+    }
+    @media (max-width: 768px) { .calc-body { grid-template-columns: 1fr; gap: 28px; } .calc-card { padding: 28px 20px; } }
+
+    .calc-field { margin-bottom: 18px; }
+    .calc-field label {
+      display: block;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--brown-700);
+      margin-bottom: 7px;
+    }
+    .calc-field input, .calc-field select {
+      width: 100%;
+      padding: 13px 14px;
+      font-family: var(--font-body);
+      font-size: 16px;
+      color: var(--text-900);
+      background: var(--cream-50);
+      border: 1px solid var(--cream-300);
+      border-radius: var(--radius-sm);
+      transition: border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+    }
+    .calc-field input:focus, .calc-field select:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201,168,76,0.18);
+    }
+    .calc-field .hint { font-size: 12px; color: var(--text-300); margin-top: 5px; }
+    .calc-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 480px) { .calc-row2 { grid-template-columns: 1fr; } }
+
+    .calc-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 15px 28px;
+      background: var(--brown-800);
+      color: var(--gold-light);
+      font-family: var(--font-body);
+      font-size: 14px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      border: none; border-radius: var(--radius-sm);
+      transition: background var(--duration) var(--ease), transform var(--duration) var(--ease);
+    }
+    .calc-btn:hover { background: var(--brown-700); transform: translateY(-1px); }
+
+    /* Sonuç pusulası — resmi makbuz estetiği */
+    .calc-result {
+      background: var(--brown-900);
+      border-radius: var(--radius);
+      padding: 30px 28px;
+      color: var(--cream-100);
+      position: relative;
+      overflow: hidden;
+      min-height: 100px;
+    }
+    .calc-result::before {
+      content: "";
+      position: absolute; inset: 10px;
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: var(--radius-sm);
+      pointer-events: none;
+    }
+    .calc-result .cr-label {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .calc-result .cr-empty { color: var(--text-200); font-size: 14px; font-style: italic; }
+    .cr-line {
+      display: flex; justify-content: space-between; gap: 12px;
+      font-size: 14px;
+      padding: 7px 0;
+      border-bottom: 1px dashed rgba(201,168,76,0.2);
+    }
+    .cr-line span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .cr-line.muted { color: var(--text-200); font-size: 13px; }
+    .cr-total {
+      display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+      margin-top: 16px; padding-top: 14px;
+      border-top: 2px solid var(--gold);
+    }
+    .cr-total .t-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-light); }
+    .cr-total .t-value {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 700;
+      color: var(--gold-light);
+      font-variant-numeric: tabular-nums;
+    }
+    .cr-note { font-size: 12px; color: var(--text-200); margin-top: 14px; line-height: 1.5; }
+    .cr-warn {
+      margin-top: 14px; padding: 10px 12px;
+      background: rgba(201,168,76,0.12);
+      border-left: 3px solid var(--gold);
+      font-size: 13px; color: var(--gold-pale);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .veri-bandi {
+      display: flex; flex-wrap: wrap; gap: 10px 26px; align-items: center;
+      margin-top: 26px;
+      padding: 14px 20px;
+      background: var(--gold-pale);
+      border: 1px solid var(--gold-light);
+      border-radius: var(--radius-sm);
+      font-size: 13px; color: var(--text-700);
+    }
+    .veri-bandi strong { color: var(--brown-800); }
+    .veri-bandi .vb-tarih {
+      margin-left: auto;
+      font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--gold-dark);
+    }
+    @media (max-width: 768px) { .veri-bandi .vb-tarih { margin-left: 0; } }
+
+    .calc-disclaimer {
+      margin-top: 40px;
+      padding: 22px 26px;
+      background: var(--cream-200);
+      border-radius: var(--radius);
+      font-size: 13px; color: var(--text-500);
+      line-height: 1.7;
+    }
+    .calc-disclaimer strong { color: var(--text-700); }
+    .calc-xlink {
+      margin-top: 26px; font-size: 15px;
+    }
+    .calc-xlink a { color: var(--gold-dark); font-weight: 600; }

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ücretsiz hukuki hesaplama araçları — kıdem tazminatı, ihbar tazminatı ve kira artış oranı hesaplama. Temmuz 2026 güncel resmi verilerle, yasal dayanaklarıyla.">
+  <meta name="keywords" content="kıdem tazminatı hesaplama, ihbar tazminatı hesaplama, kira artışı hesaplama, kira zammı 2026, kıdem tavanı 2026, tüfe kira artış oranı">
+  <meta property="og:title" content="Hesaplama Araçları — Yılanlı-Aybakan Hukuki Danışmanlık">
+  <meta property="og:description" content="Kıdem tazminatı, ihbar tazminatı ve kira artışı hesaplama araçları. Temmuz 2026 güncel resmi verilerle.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://roaring-choux-59c759.netlify.app/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://praykpax.github.io/Site/hesaplama.html">
+  <title>Hesaplama Araçları — Kıdem, İhbar, Kira Artışı | Yılanlı-Aybakan Hukuki Danışmanlık</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#icerik" class="skip-link">Ana içeriğe geç</a>
+
+<nav class="navbar" aria-label="Ana navigasyon">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-name">Yılanlı-Aybakan</span>
+      <span class="nav-logo-sub">Hukuki Danışmanlık</span>
+    </a>
+    <ul class="nav-menu" role="list">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="services.html">Hizmetler</a></li>
+      <li><a href="makaleler.html">Makaleler</a></li>
+      <li><a href="hesaplama.html" class="active" aria-current="page">Araçlar</a></li>
+      <li><a href="contact.html" class="nav-cta">Danışmanlık</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle"
+            aria-label="Menüyü aç" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="nav-mobile" id="navMobile" aria-label="Mobil menü">
+  <a href="index.html">Anasayfa</a>
+  <a href="about.html">Hakkımızda</a>
+  <a href="services.html">Hizmetler</a>
+  <a href="makaleler.html">Makaleler</a>
+  <a href="hesaplama.html" class="active" aria-current="page">Araçlar</a>
+  <a href="contact.html" class="nav-cta">Danışmanlık</a>
+</nav>
+
+<main id="icerik">
+
+  <!-- SAYFA HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Konum">
+        <a href="index.html">Anasayfa</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Hesaplama Araçları</span>
+      </nav>
+      <h1>Hesaplama Araçları</h1>
+      <p>Kıdem tazminatı, ihbar tazminatı ve kira artışınızı güncel resmi verilerle, yasal dayanağıyla hesaplayın.</p>
+    </div>
+  </header>
+
+  <section class="calc-section" aria-label="Hesaplama araçları">
+    <div class="container">
+
+      <div class="veri-bandi" role="note">
+        <span><strong>Kıdem tavanı:</strong> 73.729,84 ₺ <em>(2026/2. dönem)</em></span>
+        <span><strong>Kira artış oranı:</strong> %32,03 <em>(12 aylık ort. TÜFE)</em></span>
+        <span class="vb-tarih">Veriler: Temmuz 2026</span>
+      </div>
+
+      <!-- ============ 1. KIDEM TAZMİNATI ============ -->
+      <article class="calc-card" aria-labelledby="kidem-baslik">
+        <div class="calc-card-hdr">
+          <span class="calc-num">ARAÇ I</span>
+          <h2 class="calc-title" id="kidem-baslik">Kıdem Tazminatı Hesaplama</h2>
+        </div>
+        <p class="calc-basis">Dayanak: <strong>1475 sayılı İş Kanunu m.14</strong> · Tavan: 73.729,84 ₺ (01.07.2026–31.12.2026, Hazine ve Maliye Bakanlığı) · Kesinti: yalnızca damga vergisi (binde 7,59)</p>
+        <div class="calc-body">
+          <form id="kidemForm" onsubmit="return false;">
+            <div class="calc-row2">
+              <div class="calc-field">
+                <label for="kidemGiris">İşe Başlama Tarihi</label>
+                <input type="date" id="kidemGiris" required>
+              </div>
+              <div class="calc-field">
+                <label for="kidemCikis">İşten Ayrılma Tarihi</label>
+                <input type="date" id="kidemCikis" required>
+              </div>
+            </div>
+            <div class="calc-field">
+              <label for="kidemUcret">Son Aylık Brüt Ücret (₺)</label>
+              <input type="number" id="kidemUcret" min="0" step="0.01" placeholder="Örn: 45000" required>
+              <p class="hint">Giydirilmiş brüt ücret: yol, yemek, ikramiye gibi süreklilik arz eden ödemeler dahil edilir.</p>
+            </div>
+            <button type="button" class="calc-btn" onclick="hesaplaKidem()">Hesapla</button>
+          </form>
+          <div class="calc-result" aria-live="polite">
+            <p class="cr-label">Hesap Sonucu</p>
+            <div id="kidemSonuc"><p class="cr-empty">Bilgileri girip "Hesapla" düğmesine basın.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ 2. İHBAR TAZMİNATI ============ -->
+      <article class="calc-card" aria-labelledby="ihbar-baslik">
+        <div class="calc-card-hdr">
+          <span class="calc-num">ARAÇ II</span>
+          <h2 class="calc-title" id="ihbar-baslik">İhbar Tazminatı Hesaplama</h2>
+        </div>
+        <p class="calc-basis">Dayanak: <strong>4857 sayılı İş Kanunu m.17</strong> · Kesinti: gelir vergisi (kümülatif matraha göre %15–40) + damga vergisi (binde 7,59)</p>
+        <div class="calc-body">
+          <form id="ihbarForm" onsubmit="return false;">
+            <div class="calc-field">
+              <label for="ihbarSure">İşyerindeki Hizmet Süresi</label>
+              <select id="ihbarSure">
+                <option value="2">6 aydan az — 2 hafta</option>
+                <option value="4">6 ay – 1,5 yıl — 4 hafta</option>
+                <option value="6">1,5 yıl – 3 yıl — 6 hafta</option>
+                <option value="8" selected>3 yıldan fazla — 8 hafta</option>
+              </select>
+            </div>
+            <div class="calc-field">
+              <label for="ihbarUcret">Aylık Brüt Ücret (₺)</label>
+              <input type="number" id="ihbarUcret" min="0" step="0.01" placeholder="Örn: 45000" required>
+              <p class="hint">Giydirilmiş brüt ücret esas alınır.</p>
+            </div>
+            <div class="calc-field">
+              <label for="ihbarVergi">Gelir Vergisi Dilimi</label>
+              <select id="ihbarVergi">
+                <option value="15" selected>%15 (yılın ilk aylarında yaygın)</option>
+                <option value="20">%20</option>
+                <option value="27">%27</option>
+                <option value="35">%35</option>
+                <option value="40">%40</option>
+              </select>
+              <p class="hint">Kesin oran, yıl içindeki kümülatif vergi matrahınıza göre değişir.</p>
+            </div>
+            <button type="button" class="calc-btn" onclick="hesaplaIhbar()">Hesapla</button>
+          </form>
+          <div class="calc-result" aria-live="polite">
+            <p class="cr-label">Hesap Sonucu</p>
+            <div id="ihbarSonuc"><p class="cr-empty">Bilgileri girip "Hesapla" düğmesine basın.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ 3. KİRA ARTIŞI ============ -->
+      <article class="calc-card" aria-labelledby="kira-baslik">
+        <div class="calc-card-hdr">
+          <span class="calc-num">ARAÇ III</span>
+          <h2 class="calc-title" id="kira-baslik">Kira Artış Oranı Hesaplama</h2>
+        </div>
+        <p class="calc-basis">Dayanak: <strong>TBK m.344</strong> — artış, TÜİK'in açıkladığı on iki aylık ortalama TÜFE oranını geçemez · Güncel oran: <strong>%32,03</strong> (TÜİK Haziran 2026 verisi — Temmuz 2026'da yenilenen sözleşmeler için)</p>
+        <div class="calc-body">
+          <form id="kiraForm" onsubmit="return false;">
+            <div class="calc-field">
+              <label for="kiraMevcut">Mevcut Aylık Kira (₺)</label>
+              <input type="number" id="kiraMevcut" min="0" step="0.01" placeholder="Örn: 25000" required>
+            </div>
+            <div class="calc-field">
+              <label for="kiraOran">Uygulanacak Oran (%)</label>
+              <input type="number" id="kiraOran" min="0" max="100" step="0.01" value="32.03">
+              <p class="hint">Farklı bir yenileme dönemi için oranı değiştirebilirsiniz. Güncel oranlar: <a href="https://data.tuik.gov.tr" target="_blank" rel="noopener noreferrer" style="color:var(--gold-dark);">TÜİK</a></p>
+            </div>
+            <button type="button" class="calc-btn" onclick="hesaplaKira()">Hesapla</button>
+          </form>
+          <div class="calc-result" aria-live="polite">
+            <p class="cr-label">Hesap Sonucu</p>
+            <div id="kiraSonuc"><p class="cr-empty">Bilgileri girip "Hesapla" düğmesine basın.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <p class="calc-xlink">📐 Arabuluculuk ücreti mi hesaplamak istiyorsunuz? <a href="arabuluculuk.html#ucret-hesaplama">Arabuluculuk Ücreti Hesaplama aracına gidin →</a></p>
+
+      <div class="calc-disclaimer">
+        <strong>Hukuki Uyarı:</strong> Bu sayfadaki araçlar yalnızca genel bilgilendirme amacıyla hazırlanmıştır; hukuki görüş, danışmanlık veya kesin hesap niteliği taşımaz.
+        Kıdem ve ihbar tazminatında giydirilmiş ücretin kapsamı, hizmet süresinin kesintileri ve vergi matrahı; kira artışında sözleşme hükümleri sonucu değiştirebilir.
+        Somut durumunuza ilişkin kesin hesaplama ve hak kaybı yaşamamak için <a href="contact.html" style="color:var(--gold-dark);font-weight:600;">büromuzla iletişime geçin</a>.
+        Veriler son güncelleme: <strong>10 Temmuz 2026</strong>.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" aria-label="İletişim çağrısı">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div>
+          <h2>Hesap Sonucunuz Bir Hakkınıza<br>İşaret Ediyor Olabilir</h2>
+          <p>İlk danışmanlık görüşmesi ücretsizdir</p>
+        </div>
+        <div class="cta-band-buttons">
+          <a href="contact.html" class="btn btn-primary">Danışmanlık Alın</a>
+          <a href="https://wa.me/905469673641?text=Merhaba%2C%20hesaplama%20arac%C4%B1n%C4%B1%20kulland%C4%B1m%2C%20dan%C4%B1%C5%9Fmak%20istiyorum."
+             class="btn btn-outline light" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" aria-label="Site altbilgisi">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Yılanlı-Aybakan</div>
+        <div class="footer-brand-sub">Hukuki Danışmanlık ve Arabuluculuk</div>
+        <p class="footer-brand-desc">
+          İstanbul Barosu bünyesinde faaliyet gösteren köklü hukuk bürosu.
+          Müvekkillerimizin haklarını en etkin biçimde savunmak temel ilkemizdir.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="services.html">Hizmetler</a></li>
+          <li><a href="makaleler.html">Makaleler</a></li>
+          <li><a href="hesaplama.html">Hesaplama Araçları</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hizmet Alanları</h4>
+        <ul>
+          <li><a href="services.html">Boşanma ve Aile</a></li>
+          <li><a href="services.html">Ağır Ceza</a></li>
+          <li><a href="services.html">İş Hukuku</a></li>
+          <li><a href="services.html">Özel Suçlar</a></li>
+          <li><a href="arabuluculuk.html">Arabuluculuk</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <div class="footer-contact-item">
+          <i class="footer-contact-icon" aria-hidden="true">T</i>
+          <a href="tel:+905469673641">+90 (546) 967 36 41</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="footer-contact-icon" aria-hidden="true">@</i>
+          <a href="mailto:aybakanhukuk@gmail.com">aybakanhukuk@gmail.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="footer-contact-icon" aria-hidden="true">A</i>
+          <span>Osmaniye Mah. İsmail Erez Blv. Hukukçular Sitesi D Blok Kat:2 D:15, 34146 Bakırköy/İstanbul</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="footer-contact-icon" aria-hidden="true">S</i>
+          <span>Pzt–Cum 09:00–18:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Yılanlı-Aybakan Hukuki Danışmanlık. Tüm Hakları Saklıdır.</span>
+      <span>Av. Yakup Aybakan · İstanbul 1 No'lu Barosu — Baro Sicil No: 57572 · TBB No: 131684</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+/* ============================================================
+   HESAPLAMA ARAÇLARI — Resmi parametreler tek blokta tutulur.
+   Güncelleme gerektiğinde YALNIZCA aşağıdaki VERI nesnesini değiştirin.
+   ============================================================ */
+const VERI = {
+  guncelleme: "10 Temmuz 2026",
+  // Hazine ve Maliye Bakanlığı — 2026/2. dönem (01.07.2026–31.12.2026)
+  kidemTavani: 73729.84,
+  // Damga vergisi oranı (488 s. K. — ücret ödemeleri): binde 7,59
+  damgaOrani: 0.00759,
+  // TÜİK — 12 aylık ortalama TÜFE (Haziran 2026 verisi, Temmuz 2026 kira dönemi)
+  tufe12Ort: 32.03
+};
+
+const TL = v => v.toLocaleString("tr-TR", { style: "currency", currency: "TRY", minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+function crSatir(ad, deger, muted) {
+  return '<div class="cr-line' + (muted ? ' muted' : '') + '"><span>' + ad + '</span><span>' + deger + '</span></div>';
+}
+function crToplam(ad, deger) {
+  return '<div class="cr-total"><span class="t-label">' + ad + '</span><span class="t-value">' + deger + '</span></div>';
+}
+
+/* --- 1. KIDEM TAZMİNATI (1475 s. İş K. m.14) --- */
+function hesaplaKidem() {
+  const giris = new Date(document.getElementById("kidemGiris").value);
+  const cikis = new Date(document.getElementById("kidemCikis").value);
+  const brut  = parseFloat(document.getElementById("kidemUcret").value);
+  const hedef = document.getElementById("kidemSonuc");
+
+  if (isNaN(giris) || isNaN(cikis) || isNaN(brut) || brut <= 0) {
+    hedef.innerHTML = '<p class="cr-empty">Lütfen tüm alanları doldurun.</p>'; return;
+  }
+  const gunMs = 1000 * 60 * 60 * 24;
+  const toplamGun = Math.floor((cikis - giris) / gunMs);
+  if (toplamGun < 365) {
+    hedef.innerHTML = '<div class="cr-warn">Hizmet süresi 1 yılın altında görünüyor. 1475 sayılı İş Kanunu m.14 uyarınca kıdem tazminatına hak kazanılması için en az 1 tam yıl çalışma gerekir.</div>'; return;
+  }
+  const yil = Math.floor(toplamGun / 365);
+  const artikGun = toplamGun - yil * 365;
+
+  const tavanUygulandi = brut > VERI.kidemTavani;
+  const esasUcret = Math.min(brut, VERI.kidemTavani);
+  const brutKidem = esasUcret * yil + esasUcret * (artikGun / 365);
+  const damga = brutKidem * VERI.damgaOrani;
+  const net = brutKidem - damga;
+
+  let html = "";
+  html += crSatir("Hizmet süresi", yil + " yıl " + artikGun + " gün");
+  html += crSatir("Esas alınan brüt ücret", TL(esasUcret));
+  if (tavanUygulandi) html += crSatir("— Kıdem tavanı uygulandı", TL(VERI.kidemTavani), true);
+  html += crSatir("Brüt kıdem tazminatı", TL(brutKidem));
+  html += crSatir("Damga vergisi (binde 7,59)", "− " + TL(damga), true);
+  html += crToplam("Net Kıdem Tazminatı", TL(net));
+  html += '<p class="cr-note">Kıdem tazminatından gelir vergisi kesilmez; yalnızca damga vergisi kesintisi yapılır.</p>';
+  hedef.innerHTML = html;
+}
+
+/* --- 2. İHBAR TAZMİNATI (4857 s. İş K. m.17) --- */
+function hesaplaIhbar() {
+  const hafta = parseInt(document.getElementById("ihbarSure").value, 10);
+  const brut  = parseFloat(document.getElementById("ihbarUcret").value);
+  const vergiOran = parseFloat(document.getElementById("ihbarVergi").value) / 100;
+  const hedef = document.getElementById("ihbarSonuc");
+
+  if (isNaN(brut) || brut <= 0) {
+    hedef.innerHTML = '<p class="cr-empty">Lütfen brüt ücreti girin.</p>'; return;
+  }
+  const gunlukUcret = brut / 30;
+  const brutIhbar = gunlukUcret * 7 * hafta;
+  const gelirVergisi = brutIhbar * vergiOran;
+  const damga = brutIhbar * VERI.damgaOrani;
+  const net = brutIhbar - gelirVergisi - damga;
+
+  let html = "";
+  html += crSatir("İhbar süresi", hafta + " hafta (" + hafta * 7 + " gün)");
+  html += crSatir("Günlük brüt ücret", TL(gunlukUcret));
+  html += crSatir("Brüt ihbar tazminatı", TL(brutIhbar));
+  html += crSatir("Gelir vergisi (%" + (vergiOran * 100) + ")", "− " + TL(gelirVergisi), true);
+  html += crSatir("Damga vergisi (binde 7,59)", "− " + TL(damga), true);
+  html += crToplam("Net İhbar Tazminatı", TL(net));
+  html += '<p class="cr-note">Gelir vergisi oranı, yıl içindeki kümülatif vergi matrahınıza göre %15–40 arasında değişir; seçtiğiniz dilim tahminidir.</p>';
+  hedef.innerHTML = html;
+}
+
+/* --- 3. KİRA ARTIŞI (TBK m.344) --- */
+function hesaplaKira() {
+  const mevcut = parseFloat(document.getElementById("kiraMevcut").value);
+  const oran = parseFloat(document.getElementById("kiraOran").value);
+  const hedef = document.getElementById("kiraSonuc");
+
+  if (isNaN(mevcut) || mevcut <= 0 || isNaN(oran) || oran < 0) {
+    hedef.innerHTML = '<p class="cr-empty">Lütfen kira tutarını ve oranı girin.</p>'; return;
+  }
+  const artis = mevcut * (oran / 100);
+  const yeni = mevcut + artis;
+
+  let html = "";
+  html += crSatir("Mevcut kira", TL(mevcut));
+  html += crSatir("Uygulanan oran", "%" + oran.toLocaleString("tr-TR"));
+  html += crSatir("Aylık artış tutarı", "+ " + TL(artis));
+  html += crToplam("Yeni Aylık Kira", TL(yeni));
+  if (oran > VERI.tufe12Ort) {
+    html += '<div class="cr-warn">Girdiğiniz oran, güncel yasal üst sınır olan %' + VERI.tufe12Ort.toLocaleString("tr-TR") + " (12 aylık ortalama TÜFE) üzerindedir. TBK m.344 uyarınca bu sınırı aşan artış anlaşmaları geçersizdir.</div>";
+  }
+  html += '<p class="cr-note">Bu oran, sözleşmenin yenilendiği aya ait TÜİK 12 aylık ortalama TÜFE verisidir; kiracı aleyhine daha yüksek oran kararlaştırılamaz.</p>';
+  hedef.innerHTML = html;
+}
+</script>
+</body>
+</html>
